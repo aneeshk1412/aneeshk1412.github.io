@@ -228,71 +228,125 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
-          <tr>
+            <tr>
             <td width="33%" valign="top" align="center">
-              <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/">
-                <img src="assets/images/scope-bounded-reachability.png" alt="sym" width="90%"
-                  style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black">
+              <a href="https://neurips.cc/virtual/2024/poster/93272/">
+              <img src="assets/images/svft.png" alt="svft" width="90%"
+                style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black">
               </a>
             </td>
             <td width="67%" valign="top">
               <p>
-                <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/" id="SCOPE-BOUNDED-REACHABILITY">
-                  <heading>Scope-bounded Reachability in Valence Systems</heading>
-                </a>
-                <br>
-                Aneesh Shetty, Krishna S., Georg Zetzsche
-                <br>
-                CONCUR 2021
-                <br>
+              <a href="https://neurips.cc/virtual/2024/poster/93272/" id="SVFT"></a>
+                <heading>SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors</heading>
+              </a>
+              <br>
+              Aneesh Shetty, Vijay Chandra Lingam, Atula Neerkaje, Aditya Vavre, Gautham Krishna Gudur, Joydeep Ghosh, Eunsol Choi, Alex Dimakis, Aleksandar Bojchevski, Sujay Sanghavi
+              <br>
+              NeurIPS 2024
+              <br>
               </p>
 
-              <div class="paper" id="scope-bounded-reachability">
-                <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/">[webpage]</a>
-                <a href="javascript:toggleblock('scope-bounded-reachability-abs')">[abstract]</a>
-                <a shape="rect" href="javascript:togglebib('scope-bounded-reachability')" class="togglebib">[bibtex]</a>
-                <a href="https://arxiv.org/abs/2108.00963v1">[arXiv]</a>
+              <div class="paper" id="svft">
+              <a href="https://neurips.cc/virtual/2024/poster/93272/">[webpage]</a>
+              <a href="javascript:toggleblock('svft-abs')">[abstract]</a>
+              <a shape="rect" href="javascript:togglebib('svft')" class="togglebib">[bibtex]</a>
+              <a href="https://arxiv.org/abs/2405.19597v1">[arXiv]</a>
 
-                <p align="justify"> <i style="display: none;" id="scope-bounded-reachability-abs">Multi-pushdown
-                    systems
-                    are a standard model for concurrent recursive programs, but they have an undecidable reachability
-                    problem. Therefore, there have been several proposals to underapproximate their sets of runs so
-                    that
-                    reachability in this underapproximation becomes decidable. One such underapproximation that covers
-                    a
-                    relatively high portion of runs is scope boundedness. In such a run, after each push to stack i,
-                    the
-                    corresponding pop operation must come within a bounded number of visits to stack i.
-                    In this work, we generalize this approach to a large class of infinite-state systems. For this, we
-                    consider the model of valence systems, which consist of a finite-state control and an
-                    infinite-state
-                    storage mechanism that is specified by a finite undirected graph. This framework captures
-                    pushdowns,
-                    vector addition systems, integer vector addition systems, and combinations thereof. For this
-                    framework, we propose a notion of scope boundedness that coincides with the classical notion when
-                    the
-                    storage mechanism happens to be a multi-pushdown.
-                    We show that with this notion, reachability can be decided in PSPACE for every storage mechanism
-                    in
-                    the framework. Moreover, we describe the full complexity landscape of this problem across all
-                    storage
-                    mechanisms, both in the case of (i) the scope bound being given as input and (ii) for fixed scope
-                    bounds. Finally, we provide an almost complete description of the complexity landscape if even a
-                    description of the storage mechanism is part of the input.</i></p>
+              <p align="justify"> <i style="display: none;" id="svft-abs">
+                Popular parameter-efficient fine-tuning (PEFT) methods, such as LoRA and its variants, freeze pre-trained model weights <math alttext="\mathbf{W}" class="ltx_Math" display="inline" id="id14.1.m1.1"><semantics id="id14.1.m1.1a"><mi id="id14.1.m1.1.1" xref="id14.1.m1.1.1.cmml">𝐖</mi><annotation-xml encoding="MathML-Content" id="id14.1.m1.1b"><ci id="id14.1.m1.1.1.cmml" xref="id14.1.m1.1.1">𝐖</ci></annotation-xml><annotation encoding="application/x-tex" id="id14.1.m1.1c">\mathbf{W}</annotation><annotation encoding="application/x-llamapun" id="id14.1.m1.1d">bold_W</annotation></semantics></math> and inject learnable matrices <math alttext="\mathbf{\Delta W}" class="ltx_Math" display="inline" id="id15.2.m2.1"><semantics id="id15.2.m2.1a"><mrow id="id15.2.m2.1.1" xref="id15.2.m2.1.1.cmml"><mi id="id15.2.m2.1.1.2" xref="id15.2.m2.1.1.2.cmml">𝚫</mi><mo id="id15.2.m2.1.1.1" xref="id15.2.m2.1.1.1.cmml">⁢</mo><mi id="id15.2.m2.1.1.3" xref="id15.2.m2.1.1.3.cmml">𝐖</mi></mrow><annotation-xml encoding="MathML-Content" id="id15.2.m2.1b"><apply id="id15.2.m2.1.1.cmml" xref="id15.2.m2.1.1"><times id="id15.2.m2.1.1.1.cmml" xref="id15.2.m2.1.1.1"></times><ci id="id15.2.m2.1.1.2.cmml" xref="id15.2.m2.1.1.2">𝚫</ci><ci id="id15.2.m2.1.1.3.cmml" xref="id15.2.m2.1.1.3">𝐖</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="id15.2.m2.1c">\mathbf{\Delta W}</annotation><annotation encoding="application/x-llamapun" id="id15.2.m2.1d">bold_Δ bold_W</annotation></semantics></math>.
+                These <math alttext="\mathbf{\Delta W}" class="ltx_Math" display="inline" id="id16.3.m3.1"><semantics id="id16.3.m3.1a"><mrow id="id16.3.m3.1.1" xref="id16.3.m3.1.1.cmml"><mi id="id16.3.m3.1.1.2" xref="id16.3.m3.1.1.2.cmml">𝚫</mi><mo id="id16.3.m3.1.1.1" xref="id16.3.m3.1.1.1.cmml">⁢</mo><mi id="id16.3.m3.1.1.3" xref="id16.3.m3.1.1.3.cmml">𝐖</mi></mrow><annotation-xml encoding="MathML-Content" id="id16.3.m3.1b"><apply id="id16.3.m3.1.1.cmml" xref="id16.3.m3.1.1"><times id="id16.3.m3.1.1.1.cmml" xref="id16.3.m3.1.1.1"></times><ci id="id16.3.m3.1.1.2.cmml" xref="id16.3.m3.1.1.2">𝚫</ci><ci id="id16.3.m3.1.1.3.cmml" xref="id16.3.m3.1.1.3">𝐖</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="id16.3.m3.1c">\mathbf{\Delta W}</annotation><annotation encoding="application/x-llamapun" id="id16.3.m3.1d">bold_Δ bold_W</annotation></semantics></math> matrices are structured for efficient parameterization, often using techniques like low-rank approximations or scaling vectors.
+                However, these methods typically show a performance gap compared to full fine-tuning.
+                Although recent PEFT methods have narrowed this gap, they do so at the cost of additional learnable parameters.
+                We propose <span class="ltx_text ltx_font_smallcaps" id="id19.6.1">SVFT</span>, a <span class="ltx_text ltx_font_italic" id="id19.6.2">simple</span> approach that fundamentally differs from existing methods: the structure imposed on <math alttext="\mathbf{\Delta W}" class="ltx_Math" display="inline" id="id17.4.m4.1"><semantics id="id17.4.m4.1a"><mrow id="id17.4.m4.1.1" xref="id17.4.m4.1.1.cmml"><mi id="id17.4.m4.1.1.2" xref="id17.4.m4.1.1.2.cmml">𝚫</mi><mo id="id17.4.m4.1.1.1" xref="id17.4.m4.1.1.1.cmml">⁢</mo><mi id="id17.4.m4.1.1.3" xref="id17.4.m4.1.1.3.cmml">𝐖</mi></mrow><annotation-xml encoding="MathML-Content" id="id17.4.m4.1b"><apply id="id17.4.m4.1.1.cmml" xref="id17.4.m4.1.1"><times id="id17.4.m4.1.1.1.cmml" xref="id17.4.m4.1.1.1"></times><ci id="id17.4.m4.1.1.2.cmml" xref="id17.4.m4.1.1.2">𝚫</ci><ci id="id17.4.m4.1.1.3.cmml" xref="id17.4.m4.1.1.3">𝐖</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="id17.4.m4.1c">\mathbf{\Delta W}</annotation><annotation encoding="application/x-llamapun" id="id17.4.m4.1d">bold_Δ bold_W</annotation></semantics></math> depends on the specific weight matrix <math alttext="\mathbf{W}" class="ltx_Math" display="inline" id="id18.5.m5.1"><semantics id="id18.5.m5.1a"><mi id="id18.5.m5.1.1" xref="id18.5.m5.1.1.cmml">𝐖</mi><annotation-xml encoding="MathML-Content" id="id18.5.m5.1b"><ci id="id18.5.m5.1.1.cmml" xref="id18.5.m5.1.1">𝐖</ci></annotation-xml><annotation encoding="application/x-tex" id="id18.5.m5.1c">\mathbf{W}</annotation><annotation encoding="application/x-llamapun" id="id18.5.m5.1d">bold_W</annotation></semantics></math>.
+                Specifically, <span class="ltx_text ltx_font_smallcaps" id="id19.6.3">SVFT</span> updates <math alttext="\mathbf{W}" class="ltx_Math" display="inline" id="id19.6.m6.1"><semantics id="id19.6.m6.1a"><mi id="id19.6.m6.1.1" xref="id19.6.m6.1.1.cmml">𝐖</mi><annotation-xml encoding="MathML-Content" id="id19.6.m6.1b"><ci id="id19.6.m6.1.1.cmml" xref="id19.6.m6.1.1">𝐖</ci></annotation-xml><annotation encoding="application/x-tex" id="id19.6.m6.1c">\mathbf{W}</annotation><annotation encoding="application/x-llamapun" id="id19.6.m6.1d">bold_W</annotation></semantics></math> as a sparse combination of outer products of its singular vectors, training only the coefficients (scales) of these sparse combinations.
+                This approach allows fine-grained control over expressivity through the number of coefficients.
+                Extensive experiments on language and vision benchmarks show that <span class="ltx_text ltx_font_smallcaps" id="id19.6.4">SVFT<span class="ltx_note ltx_role_footnote" id="footnote1"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_upright" id="footnote1.1.1.1">1</span></span><span class="ltx_text ltx_font_upright" id="footnote1.5">code is available at </span><a class="ltx_ref ltx_url ltx_font_typewriter ltx_font_upright" href="https://github.com/VijayLingam95/SVFT/" title="">https://github.com/VijayLingam95/SVFT/</a></span></span></span></span> recovers up to <span class="ltx_text ltx_font_bold" id="id19.6.5">96%</span> of full fine-tuning performance while training only <span class="ltx_text ltx_font_bold" id="id19.6.6">0.006 to 0.25</span>% of parameters, outperforming existing methods that only recover up to <span class="ltx_text ltx_font_bold" id="id19.6.7">85%</span> performance using <span class="ltx_text ltx_font_bold" id="id19.6.8">0.03 to 0.8%</span> of the trainable parameter budget.
+              </i></p>
 
-                <pre xml:space="preserve" style="display:none;" width="100px">
-  @misc{shetty2021scopebounded,
-    title={Scope-Bounded Reachability in Valence Systems},
-    author={Aneesh K. Shetty and S. Krishna and Georg Zetzsche},
-    year={2021},
-    eprint={2108.00963},
-    archivePrefix={arXiv},
-    primaryClass={cs.FL}
-  }
-    </pre>
+              <pre xml:space="preserve" style="display:none; word-wrap: break-word;">
+                @inproceedings{NEURIPS2024_48c368f1,
+                  author = {Lingam, Vijay Chandra and Neerkaje, Atula and Vavre, Aditya and Shetty, Aneesh and Gudur, Gautham Krishna and Ghosh, Joydeep and Choi, Eunsol and Dimakis, Alex and Bojchevski, Aleksandar and Sanghavi, Sujay},
+                  booktitle = {Advances in Neural Information Processing Systems},
+                  editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+                  pages = {41425--41446},
+                  publisher = {Curran Associates, Inc.},
+                  title = {SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors},
+                  url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/48c368f105e8145b945227b73255635a-Paper-Conference.pdf},
+                  volume = {37},
+                  year = {2024}
+                }
+              </pre>
               </div>
             </td>
-          </tr>
+            </tr>
+
+
+            <tr>
+              <td width="33%" valign="top" align="center">
+                <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/">
+                  <img src="assets/images/scope-bounded-reachability.png" alt="sym" width="90%"
+                    style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black">
+                </a>
+              </td>
+              <td width="67%" valign="top">
+                <p>
+                  <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/" id="SCOPE-BOUNDED-REACHABILITY">
+                    <heading>Scope-bounded Reachability in Valence Systems</heading>
+                  </a>
+                  <br>
+                  Aneesh Shetty, Krishna S., Georg Zetzsche
+                  <br>
+                  CONCUR 2021
+                  <br>
+                </p>
+
+                <div class="paper" id="scope-bounded-reachability">
+                  <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14406/">[webpage]</a>
+                  <a href="javascript:toggleblock('scope-bounded-reachability-abs')">[abstract]</a>
+                  <a shape="rect" href="javascript:togglebib('scope-bounded-reachability')" class="togglebib">[bibtex]</a>
+                  <a href="https://arxiv.org/abs/2108.00963v1">[arXiv]</a>
+
+                  <p align="justify"> <i style="display: none;" id="scope-bounded-reachability-abs">Multi-pushdown
+                      systems
+                      are a standard model for concurrent recursive programs, but they have an undecidable reachability
+                      problem. Therefore, there have been several proposals to underapproximate their sets of runs so
+                      that
+                      reachability in this underapproximation becomes decidable. One such underapproximation that covers
+                      a
+                      relatively high portion of runs is scope boundedness. In such a run, after each push to stack i,
+                      the
+                      corresponding pop operation must come within a bounded number of visits to stack i.
+                      In this work, we generalize this approach to a large class of infinite-state systems. For this, we
+                      consider the model of valence systems, which consist of a finite-state control and an
+                      infinite-state
+                      storage mechanism that is specified by a finite undirected graph. This framework captures
+                      pushdowns,
+                      vector addition systems, integer vector addition systems, and combinations thereof. For this
+                      framework, we propose a notion of scope boundedness that coincides with the classical notion when
+                      the
+                      storage mechanism happens to be a multi-pushdown.
+                      We show that with this notion, reachability can be decided in PSPACE for every storage mechanism
+                      in
+                      the framework. Moreover, we describe the full complexity landscape of this problem across all
+                      storage
+                      mechanisms, both in the case of (i) the scope bound being given as input and (ii) for fixed scope
+                      bounds. Finally, we provide an almost complete description of the complexity landscape if even a
+                      description of the storage mechanism is part of the input.</i></p>
+
+                  <pre xml:space="preserve" style="display:none;">
+    @misc{shetty2021scopebounded,
+      title={Scope-Bounded Reachability in Valence Systems},
+      author={Aneesh K. Shetty and S. Krishna and Georg Zetzsche},
+      year={2021},
+      eprint={2108.00963},
+      archivePrefix={arXiv},
+      primaryClass={cs.FL}
+    }
+      </pre>
+                </div>
+              </td>
+            </tr>
 
         </table>
 
